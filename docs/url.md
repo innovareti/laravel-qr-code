@@ -5,11 +5,11 @@
 
 ```php
 <?php
-Route::get('qr-code/examples/url', function () 
+Route::get('qr-code/examples/url', function ()
 {
-    return  QRCode::url('werneckbh.github.io/qr-code/')
+    return  QRCode::url('innovareti.github.io/qr-code/')
                   ->setSize(8)
                   ->setMargin(2)
                   ->png();
-});    
+});
 ```

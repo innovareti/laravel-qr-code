@@ -2,41 +2,41 @@
 
 Create QR Codes with Laravel
 
-This is a wrapper for [QR Code Generator for PHP](https://werneckbh.github.io/qr-code), a standalone library to generate QR Codes in PNG and SVG.
+This is a wrapper for [QR Code Generator for PHP](https://innovareti.github.io/qr-code), a standalone library to generate QR Codes in PNG and SVG.
 
 ## Installation
 
 Install using **composer**:
 
 ```bash
-$ composer require werneckbh/laravel-qr-code
+$ composer require innovareti/laravel-qr-code
 ```
 ##### Laravel 5.4 (5.5+ can skip this step)
 
 You need to add provider and alias to your `config/app.php` file:
- 
+
 ```php
 <?php
 
-'providers' => [     
-   
- LaravelQRCode\Providers\QRCodeServiceProvider::class,     
+'providers' => [
+
+ LaravelQRCode\Providers\QRCodeServiceProvider::class,
 
 ],
 
 
 'aliases' => [
 
-'QRCode' => LaravelQRCode\Facades\QRCode::class,     
-   
-] 
+'QRCode' => LaravelQRCode\Facades\QRCode::class,
+
+]
 ```
 ## <a id='code-types'></a>QR Code Types
 
 Laravel QR Code Generator supports the following QR Codes:
 
-- [Calendar Event](calendar.md)  
-- [Email Message](email.md)  
+- [Calendar Event](calendar.md)
+- [Email Message](email.md)
 - [Phone](phone.md)
 - [SMS](sms.md)
 - [Text](text.md)
@@ -60,6 +60,6 @@ Option | Return value | Expected Values
 
 ## Notes
 
-- If you set an outfile, you **MUST make sure the path exists**.  
+- If you set an outfile, you **MUST make sure the path exists**.
 Don't forget to **set filename extension** according to your output (.png or .svg).
 - Since SVGs are scalable, use them to make complex QR Codes such as [Calendar Events](calendar.md), [meCards](me-card.md) and [vCards](v-card.md)
