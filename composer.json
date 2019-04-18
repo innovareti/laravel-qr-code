@@ -10,7 +10,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "innovareti/qr-code": "^1.0.0-dev"
+    "innovareti/qr-code": "dev-master"
   },
   "autoload": {
     "branch-alias": {
