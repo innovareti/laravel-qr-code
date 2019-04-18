@@ -1,30 +1,33 @@
 {
-    "name": "innovareti/laravel-qr-code",
-    "description": "QR Code Generator for PHP wrapper for Laravel",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Bruno Werneck",
-            "email": "brunovaulawerneck@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "innovareti/qr-code": "^2.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "LaravelQRCode\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "LaravelQRCode\\Providers\\QRCodeServiceProvider"
-            ],
-            "aliases": {
-                "QRCode": "LaravelQRCode\\Facades\\QRCode"
-            }
-        }
+  "name": "innovareti/laravel-qr-code",
+  "description": "QR Code Generator for PHP wrapper for Laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bruno Werneck",
+      "email": "brunovaulawerneck@gmail.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "innovareti/qr-code": "^1.0.0-dev"
+  },
+  "autoload": {
+    "branch-alias": {
+      "dev-master": "1.0.0-dev"
+    },
+    "psr-4": {
+      "LaravelQRCode\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelQRCode\\Providers\\QRCodeServiceProvider"
+      ],
+      "aliases": {
+        "QRCode": "LaravelQRCode\\Facades\\QRCode"
+      }
+    }
+  }
 }
